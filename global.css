@@ -1,0 +1,12 @@
+:root {
+    /*misc*/
+    --jet-black: #162428;
+
+    /*fill*/
+    --header:#00a4a7;
+    --backdrop: #052b3f;
+
+    /*text*/
+    --text-emphasis: #12cdd6;
+    --text-standard: #cedade;
+}
