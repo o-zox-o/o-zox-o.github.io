@@ -9,9 +9,8 @@
 }
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, var(--backdrop) 0%, var(--header) 100%);
     color: var(--text-light);
-    padding: 4rem 0;
+    padding: 4rem 0 1rem 0;
     text-align: center;
 }
 
@@ -53,8 +52,8 @@
 
 /* Officers Section */
 .officers-section {
-    padding: 5rem 0;
-    background: var(--backdrop);
+    padding-top: 2rem;
+    padding-bottom: 7rem;
 }
 
 .officers-container {
