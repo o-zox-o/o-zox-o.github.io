@@ -3,6 +3,11 @@ header, .navbar {
     color: #f7fdff;
     padding-top: 5px;
     padding-bottom: 5px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box; /* important! makes padding count inside the width */
+    overflow-x: hidden; /* optional: hides accidental horizontal scroll */
 }
 
 header h1, header nav a {
@@ -46,6 +51,28 @@ nav {
 .logo {
     width:50px;
     height:50px;
+}
+@media (max-width: 1400px) {
+    div.navbar {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1000px) {
+    div.navbar {
+        gap: 0;
+        justify-content: space-between;
+    }
+    h1,
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        font-size: 15px;
+        gap: 1.5rem !important;
+    }
 }
 
  @media (max-width: 700px) {
