@@ -68,26 +68,6 @@ body, html {
 	
 }
 
-@media (max-width: 900px) {
-    .navbar {
-        gap: 4rem !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        gap: 1rem !important;
-    }
-    header h1 {
-        font-size: 20px;
-    }
-    nav {
-        font-size: 14px;
-        gap: 1.5rem !important;
-    }
-}
-
 
 :root {
     /*misc*/
@@ -100,56 +80,5 @@ body, html {
     /*text*/
     --text-emphasis: #12cdd6;
     --text-standard: #cedade;
-}
-
-/* header styles */
-header, .navbar {
-    background-color: #02a3a7;
-    color: #f7fdff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-header h1, header nav a {
-    color: #f7fdff;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-}
-
-header nav a {
-    transition: color 0.3s ease; /* add this to the base link */
-}
-
-header nav a:hover {
-    color: #072b40;
-}
-
-div.navbar {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25rem;
-}
-
-div.navbar > div {
-    display:flex;
-    align-items: center;
-    gap:20px;
-}
-
-h1 {
-    font-size:28px;
-    color:var(--text-emphasis);
-}
-
-nav {
-    font-size:17px;
-    display: flex;
-    gap:50px;
-}
-
-.logo {
-    width:50px;
-    height:50px;
 }
 
