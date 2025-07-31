@@ -317,12 +317,4 @@
         grid-template-columns: 1fr;
     }
 
-    .navbar {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    nav a {
-        margin-left: 1rem;
-    }
 }
