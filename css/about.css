@@ -1,3 +1,7 @@
+* {
+    color: var(--text-standard);
+}
+
 /* Hero Section */
 .hero-section {
     color: var(--text-light);
@@ -40,3 +44,177 @@
         transform: translateY(0);
     }
 }
+
+/* About Section */
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    line-height: 1.7;
+}
+
+.about-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-emphasis);
+    text-align: center;
+    position: relative;
+}
+
+.about-section h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem 0;
+    color: var(--text-emphasis);
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+    position: relative;
+}
+
+.about-section h2::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+.about-section > p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--text-standard);
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section h2 + p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.about-section ul {
+    margin: 1.5rem 0 2rem 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.about-section li {
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section li:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-left-color: var(--primary-color);
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-section strong {
+    color: var(--text-emphasis);
+    font-weight: 600;
+}
+
+/* Section dividers */
+.about-section h2:not(:first-of-type) {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 2rem 1rem;
+    }
+    
+    .about-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .about-section h2 {
+        font-size: 1.6rem;
+        margin: 2.5rem 0 1rem 0;
+    }
+    
+    .about-section li {
+        padding: 0.8rem 1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .about-section li:hover {
+        transform: translateX(3px);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .about-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-section h2 {
+        font-size: 1.4rem;
+        padding-left: 0.8rem;
+    }
+    
+    .about-section li {
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+/* Animation delays for staggered effect */
+.about-section h2:nth-of-type(1) { animation: fadeInUp 0.6s ease 0.1s both; }
+.about-section h2:nth-of-type(2) { animation: fadeInUp 0.6s ease 0.2s both; }
+.about-section h2:nth-of-type(3) { animation: fadeInUp 0.6s ease 0.3s both; }
+.about-section h2:nth-of-type(4) { animation: fadeInUp 0.6s ease 0.4s both; }
+.about-section h2:nth-of-type(5) { animation: fadeInUp 0.6s ease 0.5s both; }
+.about-section h2:nth-of-type(6) { animation: fadeInUp 0.6s ease 0.6s both; }
+.about-section h2:nth-of-type(7) { animation: fadeInUp 0.6s ease 0.7s both; }
+.about-section h2:nth-of-type(8) { animation: fadeInUp 0.6s ease 0.8s both; }
+
+.about-section li {
+    opacity: 0;
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+/* Stagger list item animations */
+.about-section li:nth-child(1) { animation-delay: 0.1s; }
+.about-section li:nth-child(2) { animation-delay: 0.15s; }
+.about-section li:nth-child(3) { animation-delay: 0.2s; }
+.about-section li:nth-child(4) { animation-delay: 0.25s; }
+.about-section li:nth-child(5) { animation-delay: 0.3s; }
+.about-section li:nth-child(6) { animation-delay: 0.35s; }
